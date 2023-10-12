@@ -8,7 +8,7 @@ const imgSrcList = [
   "shower.webp",
 ];
 
-export default function Gallary() {
+export default function Gallery() {
   return (
     <section className="mx-auto flex items-center justify-center">
       <ul className="grid grid-cols-2 gap-1 xl:grid-cols-[600px,368px,368px] xl:grid-rows-2">
