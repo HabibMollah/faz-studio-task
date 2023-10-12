@@ -13,11 +13,11 @@ type Props = {
 export default function Icon({ variant, className }: Props) {
   return (
     <Image
-      className={className}
+      className={`h-[24px] w-[24px] ${className}`}
       src={`/${variant}`}
       alt={`${variant} icon`}
-      width={20}
-      height={20}
+      width={24}
+      height={24}
     />
   );
 }
