@@ -26,7 +26,11 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+$bg: gray;
+$fg: rebeccapurple;
+
 main {
-  background-color: white;
-  color: rebeccapurple;
+  background-color: $bg;
+  color: $fg;
+  min-height: 100vh;
 }
