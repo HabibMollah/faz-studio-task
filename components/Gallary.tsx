@@ -10,12 +10,14 @@ const imgSrcList = [
 
 export default function Gallary() {
   return (
-    <section>
-      <ul className="grid grid-cols-[600px,368px,368px] grid-rows-2 gap-1">
+    <section className="mx-auto flex items-center justify-center">
+      <ul className="grid grid-cols-2 gap-1 xl:grid-cols-[600px,368px,368px] xl:grid-rows-2">
         {imgSrcList.map((src, index) => (
           <li
             className={`${
-              index === 0 ? "row-span-2" : "h-full max-h-[300px] w-full"
+              index === 0
+                ? "col-span-2 md:col-span-2 md:aspect-square xl:col-span-1 xl:row-span-2"
+                : "aspect-square md:aspect-auto md:h-[298px] md:w-[368px]"
             }`}
             key={src}
           >
