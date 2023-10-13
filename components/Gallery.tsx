@@ -52,7 +52,7 @@ export default function Gallery() {
             />
           </motion.li>
         ))}
-        <button className="absolute bottom-8 right-8 flex items-center justify-center bg-white px-2 text-sm font-bold shadow-[0px_16px_40px_-7px_#00000005] lg:gap-4 lg:p-4">
+        <button className="lef absolute bottom-8 right-[50%] flex translate-x-[50%] items-center justify-center bg-white p-2 text-sm font-bold shadow-[0px_16px_40px_-7px_#00000005] lg:right-8 lg:translate-x-0 lg:gap-4 lg:p-4">
           <Icon variant="gallery.svg" />
           See All
         </button>
