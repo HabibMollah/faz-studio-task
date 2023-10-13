@@ -8,7 +8,7 @@ export default function Navbar() {
       initial={{ y: 100, x: "0%", opacity: 0 }}
       animate={{ y: 0, x: "0%", opacity: 1 }}
       transition={{ type: "spring", stiffness: 100, duration: 5 }}
-      className="fixed bottom-0 w-screen bg-[#f7f7f7] px-4 py-3 font-bold text-black"
+      className="fixed bottom-0 z-50 w-screen bg-[#f7f7f7] px-4 py-3 font-bold text-black"
     >
       <nav className="mx-auto flex max-w-[1344px] items-center">
         {/* Cancel button */}
