@@ -6,7 +6,7 @@ import Icon from "./Icon";
 const imgSrcList = [
   "blue-house.webp",
   "white-house.webp",
-  "garder.webp",
+  "garden.webp",
   "dining.webp",
   "shower.webp",
 ];
