@@ -1,8 +1,15 @@
+"use client";
+import { motion } from "framer-motion";
 import Icon from "./Icon";
 
 export default function Navbar() {
   return (
-    <header className="fixed bottom-0 w-screen bg-[#f7f7f7] px-4 py-3 font-bold text-black">
+    <motion.header
+      initial={{ y: 100, x: "0%", opacity: 0 }}
+      animate={{ y: 0, x: "0%", opacity: 1 }}
+      transition={{ type: "spring", stiffness: 100, duration: 5 }}
+      className="fixed bottom-0 w-screen bg-[#f7f7f7] px-4 py-3 font-bold text-black"
+    >
       <nav className="mx-auto flex max-w-[1344px] items-center">
         {/* Cancel button */}
         <button className="flex items-center gap-4 border border-[#4B4B4B] bg-white p-1 lg:p-4">
@@ -30,6 +37,6 @@ export default function Navbar() {
           </button>
         </div>
       </nav>
-    </header>
+    </motion.header>
   );
 }
