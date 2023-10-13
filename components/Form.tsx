@@ -5,11 +5,11 @@ export default function Form() {
     <section className="mx-auto max-w-[1344px]">
       <form className="">
         {/* Property Room / Details */}
-        <div className="flex gap-8 pb-[61px] pt-[30px]">
+        <div className="flex flex-col gap-8 pb-[61px] pt-[30px] lg:flex-row">
           <h2 className="min-w-[312px] text-2xl font-bold tracking-[0.24px]">
             Property /Room Details
           </h2>
-          <div className="grid w-full grid-cols-3 gap-8">
+          <div className="grid w-full grid-cols-1 gap-8 sm:grid-cols-3">
             <Input
               label="Property Type"
               type="text"
