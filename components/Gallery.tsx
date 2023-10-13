@@ -56,7 +56,7 @@ export default function Gallery() {
           initial={{ y: 150, opacity: 0, scale: 0 }}
           animate={{ y: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="lef absolute bottom-8 right-[50%] flex translate-x-[50%] items-center justify-center bg-white p-2 text-sm font-bold shadow-[0px_16px_40px_-7px_#00000005] lg:right-8 lg:translate-x-0 lg:gap-4 lg:p-4"
+          className="absolute bottom-8 right-8 flex items-center justify-center bg-white p-2 text-sm font-bold shadow-[0px_16px_40px_-7px_#00000005] lg:gap-4 lg:p-4"
         >
           <Icon variant="gallery.svg" />
           See All
