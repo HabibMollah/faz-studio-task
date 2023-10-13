@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Icon from "./Icon";
 
 const imgSrcList = [
   "blue-house.webp",
@@ -27,7 +28,7 @@ const fadeInAnimationVariants = {
 export default function Gallery() {
   return (
     <section className="mx-auto flex items-center justify-center">
-      <ul className="grid grid-cols-2 gap-1 xl:grid-cols-[600px,368px,368px] xl:grid-rows-2">
+      <ul className="relative grid grid-cols-2 gap-1 xl:grid-cols-[600px,368px,368px] xl:grid-rows-2">
         {imgSrcList.map((src, index) => (
           <motion.li
             className={`${
@@ -51,6 +52,10 @@ export default function Gallery() {
             />
           </motion.li>
         ))}
+        <button className="absolute bottom-8 right-8 flex items-center justify-center bg-white px-2 text-sm font-bold shadow-[0px_16px_40px_-7px_#00000005] lg:gap-4 lg:p-4">
+          <Icon variant="gallery.svg" />
+          See All
+        </button>
       </ul>
     </section>
   );
