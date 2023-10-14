@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Input from "./Input";
+import CheckboxWithSwitch from "./CheckboxWithSwitch";
 
 export default function Preferences() {
   const [maxTenants, setMaxTenants] = useState(2);
@@ -45,6 +46,13 @@ export default function Preferences() {
             type="date"
             defaultValue="2023-07-25"
           />
+        </div>
+        <div className="grid w-full max-w-[656px] grid-cols-1 gap-8 !font-bold sm:grid-cols-2">
+          <CheckboxWithSwitch label="Bills Included" />
+          <CheckboxWithSwitch label="Parking Included" />
+          <CheckboxWithSwitch label="Family" />
+          <CheckboxWithSwitch label="Smokers" />
+          <CheckboxWithSwitch label="Rent Included" />
         </div>
       </div>
     </div>
