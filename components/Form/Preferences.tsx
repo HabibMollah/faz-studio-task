@@ -9,9 +9,14 @@ export default function Preferences() {
   const lastNumber = numbers[numbers.length - 1];
   return (
     <div className="flex flex-col gap-8 pb-[61px] pt-[30px] lg:flex-row">
-      <h2 className="min-w-[312px] text-2xl font-bold tracking-[0.24px]">
-        Property /Room Details
-      </h2>
+      <span className="flex flex-col gap-8">
+        <h2 className="min-w-[312px] text-2xl font-bold tracking-[0.24px]">
+          Property /Room Details
+        </h2>
+        <p className="max-w-[310px] text-base">
+          Please tell us about who can apply for your property.
+        </p>
+      </span>
       <div className="grid grid-cols-1 gap-8">
         <div className="w-full">
           <Input
