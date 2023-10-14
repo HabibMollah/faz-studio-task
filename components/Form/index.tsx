@@ -1,5 +1,6 @@
 import KeyFeatures from "./KeyFeatures";
 import LocationAddress from "./LocationAddress";
+import Package from "./Package";
 import Preferences from "./Preferences";
 import PropertyDescription from "./PropertyDescription";
 import PropertyRent from "./PropertyRent";
@@ -21,6 +22,7 @@ export default function Form() {
         <Preferences />
         <RelationshipToTheProperty />
         <Schedules />
+        <Package />
       </form>
     </section>
   );
