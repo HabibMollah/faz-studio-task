@@ -2,7 +2,7 @@ export default function PropertyDescription() {
   return (
     <div className="flex flex-col gap-8 pb-[61px] pt-[30px] lg:flex-row">
       <h2 className="min-w-[312px] text-2xl font-bold tracking-[0.24px]">
-        Property /Room Details
+        Property description
       </h2>
       <div className="w-full">
         <p className="max-w-[656px] text-xl">

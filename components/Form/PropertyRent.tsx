@@ -4,7 +4,7 @@ export default function PropertyRent() {
   return (
     <div className="flex flex-col gap-8 pb-[61px] pt-[30px] lg:flex-row">
       <h2 className="min-w-[312px] text-2xl font-bold tracking-[0.24px]">
-        Property /Room Details
+        Property Rent
       </h2>
       <div className="grid w-full max-w-[656px] grid-cols-1 gap-8 sm:grid-cols-2">
         <Input
