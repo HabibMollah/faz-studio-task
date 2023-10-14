@@ -28,7 +28,7 @@ export default function Preferences() {
         </div>
         <div>
           <p className="text-sm font-[700]">Maximum Number of Tenants</p>
-          <div className="flex gap-8 py-4">
+          <div className="flex flex-wrap gap-8 py-4">
             {numbers.map((number) => (
               <button
                 type="button"
