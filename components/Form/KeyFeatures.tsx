@@ -2,7 +2,7 @@ import Input from "./Input";
 
 export default function KeyFeatures() {
   return (
-    <div className="flex flex-col gap-8 pb-[61px] pt-[30px] lg:flex-row">
+    <div className="flex flex-col gap-8 pb-[61px] lg:flex-row">
       <h2 className="min-w-[312px] text-2xl font-bold tracking-[0.24px]">
         Key Features
       </h2>
