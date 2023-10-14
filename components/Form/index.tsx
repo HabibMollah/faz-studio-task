@@ -1,5 +1,6 @@
 import KeyFeatures from "./KeyFeatures";
 import LocationAddress from "./LocationAddress";
+import PropertyDescription from "./PropertyDescription";
 import PropertyRent from "./PropertyRent";
 import PropertyRoomDetails from "./PropertyRoomDetails";
 import YoutubeURL from "./YoutubeURL";
@@ -13,6 +14,7 @@ export default function Form() {
         <LocationAddress />
         <YoutubeURL />
         <PropertyRent />
+        <PropertyDescription />
       </form>
     </section>
   );
