@@ -3,6 +3,7 @@ type Props = {
   type: string;
   placeholder?: string;
   value?: string | number;
+  defaultValue?: string | number;
   disabled?: boolean;
   className?: string;
 };
@@ -12,6 +13,7 @@ export default function Input({
   type,
   placeholder,
   value,
+  defaultValue,
   disabled,
   className,
 }: Props) {
@@ -26,6 +28,7 @@ export default function Input({
         type={type}
         placeholder={placeholder}
         value={value}
+        defaultValue={defaultValue}
         disabled={disabled}
       />
     </div>

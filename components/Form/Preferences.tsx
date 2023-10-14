@@ -38,6 +38,14 @@ export default function Preferences() {
             ))}
           </div>
         </div>
+        <div className="w-full">
+          <Input
+            className="shadow-[0px_28px_55px_-16px_#d3d4d42b]"
+            label="Earliest Move In Date"
+            type="date"
+            defaultValue="2023-07-25"
+          />
+        </div>
       </div>
     </div>
   );
