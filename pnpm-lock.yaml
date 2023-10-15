@@ -8,6 +8,9 @@ dependencies:
   '@radix-ui/react-switch':
     specifier: ^1.0.3
     version: 1.0.3(@types/react-dom@18.2.13)(@types/react@18.2.28)(react-dom@18.2.0)(react@18.2.0)
+  '@syncfusion/ej2-base':
+    specifier: ^23.1.40
+    version: 23.1.40
   '@syncfusion/ej2-react-schedule':
     specifier: ^23.1.40
     version: 23.1.40
