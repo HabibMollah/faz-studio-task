@@ -1,4 +1,13 @@
-import Input from "./Input";
+"use client";
+import {
+  Inject,
+  ScheduleComponent,
+  Day,
+  Week,
+  WorkWeek,
+  Month,
+  Agenda,
+} from "@syncfusion/ej2-react-schedule";
 
 export default function Schedules() {
   return (
@@ -11,7 +20,11 @@ export default function Schedules() {
           Click on an empty box to assign a schedule slot
         </p>
       </span>
-      <div className="grid w-full grid-cols-1 gap-8 sm:grid-cols-3"></div>
+      <div className="">
+        <ScheduleComponent>
+          <Inject services={[Day, Week, WorkWeek, Month, Agenda]} />
+        </ScheduleComponent>
+      </div>
     </div>
   );
 }

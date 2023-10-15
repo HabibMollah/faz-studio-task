@@ -20,6 +20,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          href="https://cdn.syncfusion.com/ej2/material.css"
+          rel="stylesheet"
+          type="text/css"
+        />
+      </head>
       <body className={manrope.className}>
         <Navbar />
         {children}
