@@ -8,6 +8,11 @@ import {
   Month,
   Agenda,
 } from "@syncfusion/ej2-react-schedule";
+import { registerLicense } from "@syncfusion/ej2-base";
+
+registerLicense(
+  "Ngo9BigBOggjHTQxAR8/V1NHaF5cXmVCf1NpR2FGfV5yd0VEal1TTnZWUj0eQnxTdEZiWX5bcXBURGBVVUR0XA==",
+);
 
 export default function Schedules() {
   return (
@@ -20,7 +25,7 @@ export default function Schedules() {
           Click on an empty box to assign a schedule slot
         </p>
       </span>
-      <div className="">
+      <div className="max-h-[683px] overflow-y-scroll">
         <ScheduleComponent>
           <Inject services={[Day, Week, WorkWeek, Month, Agenda]} />
         </ScheduleComponent>
